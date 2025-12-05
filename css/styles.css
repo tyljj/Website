@@ -1,0 +1,105 @@
+/* ==== RESET ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background: #0d0d0d;
+  color: #e6e6e6;
+  line-height: 1.6;
+}
+
+/* ==== LAYOUT ==== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 50px;
+  background: #111;
+  border-bottom: 1px solid #222;
+}
+
+header a {
+  color: #e6e6e6;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+header a:hover {
+  color: #4db8ff;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 30px;
+}
+
+/* ==== HERO ==== */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  animation: fadeInUp 0.7s ease;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  font-size: 1.2rem;
+  color: #cccccc;
+  max-width: 700px;
+}
+
+/* ==== PROJECT CARDS ==== */
+.project-card {
+  background: #141414;
+  padding: 25px;
+  margin-bottom: 20px;
+  border: 1px solid #1f1f1f;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.project-card:hover {
+  border-color: #4db8ff;
+  transform: translateY(-3px);
+}
+
+/* ==== RESUME SECTIONS ==== */
+.section {
+  margin-bottom: 40px;
+}
+
+.section h3 {
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+}
+
+/* ==== ANIMATIONS ==== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==== FOOTER ==== */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 40px;
+}
